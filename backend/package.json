@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-   "dev": "node --watch src/index.js"
+    "dev": "node --watch src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +11,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "@clerk/express": "^2.1.69",
     "cors": "^2.8.6",
     "dotenv": "^18.0.1",
     "express": "^5.2.1",
