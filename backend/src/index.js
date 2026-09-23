@@ -10,7 +10,7 @@ import cors from 'cors';
 import User from './models/user.model.js';
 
 import { connectDB } from "./lib/db.js";
-import job from './lib/job.js';
+import job from './lib/cron.js';
 
 const app = express();
 
@@ -46,7 +46,7 @@ app.listen(PORT, () => {
     connectDB();
     console.log(`Server is running on port ${PORT}`);
 
-    if(process.env.NODE_ENV === "production"){
+    if (process.env.NODE_ENV === "production") {
         job.start();
     }
 });
